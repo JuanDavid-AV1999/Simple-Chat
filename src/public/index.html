@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Simple Chat</title>
+</head>
+<body>
+
+    <!-- CHAT CONTENT -->
+    <section class="chat-box">
+        <div class="chat-window">
+            <div class="chat-output"></div>
+        </div>
+        <div class="actions">
+            <em id="typing"></em>
+        </div>
+        <form class="form" id="form">
+            <input type="text" name="input-user" id="input-user" placeholder="User">
+            <input type="text" name="input-message", id="input-message" placeholder="Mesage">
+            <input type="submit" class="btn-send" value="send">
+        </form>
+    </section>
+
+    <!-- OUTPUT TEMPLATE -->
+    <template id="output-template">
+        <p><strong></strong></p>
+    </template>
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
